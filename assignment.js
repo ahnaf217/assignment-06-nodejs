@@ -11,6 +11,11 @@ const server = http.createServer((req, res) =>{
         res.write("<h1>This is the blog page</h1>");
         res.end();
     }
+    else if(req.url == "/about")
+    {
+        res.write("<h1>This is the about us page</h1>");
+        res.end();
+    }
 
 })
 
