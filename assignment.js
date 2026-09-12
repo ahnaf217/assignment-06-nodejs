@@ -16,6 +16,11 @@ const server = http.createServer((req, res) =>{
         res.write("<h1>This is the about us page</h1>");
         res.end();
     }
+    else if(req.url == "/contact")
+    {
+        res.write("<h1>This is the contact us page</h1>");
+        res.end();
+    }
 
 })
 
